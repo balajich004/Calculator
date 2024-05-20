@@ -1,3 +1,7 @@
+let first;
+let second;
+let operator;
+
 const add=(a,b)=>{
     return a+b;
 }
