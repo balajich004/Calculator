@@ -28,3 +28,30 @@ function clearinput(){
     secondarray=[];  
     step=0; 
 }
+const negate=()=>{
+    if(input.value<0 || input.value>0){
+        let me=-(input.value);
+        step=1;
+        clearinput();
+        input.value=me;
+        first=me;
+    }
+};
+function backspace() {
+    if(step===0 || step===1){
+        array.pop();
+        first=Number(array.join(""));
+        input.value=first;
+        // array=input.value; 
+    }
+    else{
+        secondarray.pop();
+        second=Number(secondarray.join(""));
+        input.value=second;
+    }
+}
+document.addEventListener("keydown",(event)=>{
+    if (event.key === "Backspace") {
+        backspace();
+    }
+});
