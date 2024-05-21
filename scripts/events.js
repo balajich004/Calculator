@@ -95,7 +95,6 @@ document.addEventListener("keydown",(event)=>{
 });
 document.addEventListener("keydown",(event)=>{
     if(event.key=="."){
-        input.value="can't work with decimals";
-        input.style.color="red";
+        addDecimal();
     }
 })
