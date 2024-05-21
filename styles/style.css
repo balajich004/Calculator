@@ -1,4 +1,69 @@
-
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    flex-wrap: wrap;
+}
+.wrapper-card{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: darkgray;
+    padding: 10px;
+    border-radius: 8px;
+}
 .common{
     display: flex;
+    flex: 1;
+    /* gap:10px; */
+    /* text-align: center; */
 }
+button{
+    flex: 1;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 8px;
+
+}
+/* .input input{
+    flex: 1;
+} */
+button:hover{
+    background-color: lightgoldenrodyellow;
+    cursor: pointer;
+}
+.buttons-1 button{
+    background-color: lightcoral;
+}
+input{
+    padding: 18px;
+    background-color: black;
+    color: wheat;
+    border-radius: 8px;
+    font-size:20px
+}
+.ac button{
+    background-color: lightblue;
+}
+.footer {
+    text-align: center;
+    margin-bottom: 0;
+    padding: 10px 0;
+    background-color: #1a1a40;
+    /* flex-direction: row; */
+    border-radius: 10px;
+    padding: 16px;
+    flex: 1;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer a{
+    text-decoration: none;
+    color: wheat;
+} 

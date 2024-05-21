@@ -23,6 +23,10 @@ const calculate=()=>{
         result=first**second;
         input.value=result;
     }
+    else{
+        result="watch it bro!I don't support that";
+        input.value=result;
+    }
     first=null;
     second=null;
     operator=null;
