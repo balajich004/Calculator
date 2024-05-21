@@ -50,8 +50,3 @@ function backspace() {
         input.value=second;
     }
 }
-document.addEventListener("keydown",(event)=>{
-    if (event.key === "Backspace") {
-        backspace();
-    }
-});
