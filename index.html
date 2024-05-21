@@ -9,42 +9,42 @@
 <body>
     <div class="calculator">
         <div class="input">
-            <input type="number" placeholder="this is where u input" id="input">
+            <input type="text" placeholder="this is where u input" id="input">
         </div>
         <div class="buttons">
             <div class="buttons-1 common">
-                <button class="mod">%</button>
-                <button class="div">&divide;</button>
-                <button class="ac">AC</button>
+                <button class="mod" onclick="getoperator('%')">%</button>
+                <button class="div" onclick="getoperator('/')">&divide;</button>
+                <button class="ac"  onclick="clearinput()">AC</button>
                 <button class="cancel">x</button>
             </div>
             <div class="buttons-2 common">
-                <button class="seven">7</button>
-                <button class="eight">8</button>
-                <button class="nine">9</button>
-                <button class="mul">X</button>
+                <button class="seven" onclick="getNumber(7)">7</button>
+                <button class="eight" onclick="getNumber(8)">8</button>
+                <button class="nine" onclick="getNumber(9)">9</button>
+                <button class="mul" onclick="getoperator('*')">X</button>
             </div>
             <div class="buttons-3 common">
-                <button class="four">4</button>
-                <button class="five">5</button>
-                <button class="six">6</button>
-                <button class="sub">-</button>
+                <button class="four" onclick="getNumber(4)">4</button>
+                <button class="five" onclick="getNumber(5)">5</button>
+                <button class="six" onclick="getNumber(6)">6</button>
+                <button class="sub" onclick="getoperator('-')">-</button>
             </div>
             <div class="buttons-4 common">
-                <button class="one">1</button>
-                <button class="two">2</button>
-                <button class="three">3</button>
-                <button class="add">+</button>
+                <button class="one" onclick="getNumber(1)">1</button>
+                <button class="two" onclick="getNumber(2)">2</button>
+                <button class="three" onclick="getNumber(3)">3</button>
+                <button class="add" onclick="getoperator('+')">+</button>
             </div>
             <div class="buttons-5 common">
                 <button class="negate">+/-</button>
-                <button class="zero">0</button>
+                <button class="zero" onclick="getNumber(0)">0</button>
                 <button class="decimal">.</button>
-                <button class="equals">=</button>
+                <button class="equals" onclick="calculate()">=</button>
             </div>
         </div>
     </div>
     <script src="./scripts/script.js"></script>
-    <script src="./scripts/button.js"></script>
+    <script src="./scripts/get.js"></script>
 </body>
 </html>
