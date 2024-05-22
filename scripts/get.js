@@ -4,6 +4,10 @@ let array=[],step=0;
 let secondarray=[]
 function getNumber(num){
     if(step===0 || step===1){
+        if(step===0){
+            array=[];
+            first=null;
+        }
     array.push(num);
     first=Number(array.join(""));
     input.value=first;

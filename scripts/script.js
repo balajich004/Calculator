@@ -27,12 +27,12 @@ const calculate=()=>{
         result="watch it bro!I don't support that";
         input.value=result;
     }
-    first=null;
+    first=result;
     second=null;
     operator=null;
     array=[];
     secondarray=[];  
-    step=0;
+    step=1;
 };
 function addDecimal(){
     if(step===0 || step===1){
