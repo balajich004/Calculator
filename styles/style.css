@@ -27,18 +27,15 @@ body{
 button{
     flex: 1;
     padding: 8px;
+    border: none;
     margin: 8px;
     border-radius: 8px;
-
+    font-weight: bold;
 }
 /* .input input{
     flex: 1;
 } */
-button:hover{
-    background-color: lightgoldenrodyellow;
-    cursor: pointer;
-}
-.buttons-1 button{
+.add,.mul,.sub,.buttons-1 button{
     background-color: lightcoral;
 }
 input{
@@ -46,10 +43,14 @@ input{
     background-color: black;
     color: wheat;
     border-radius: 8px;
-    font-size:20px
+    font-size:20px;
+    border:none;
 }
 .ac button{
     background-color: lightblue;
+}
+.equals{
+    background-color: orange;
 }
 .footer {
     text-align: center;
@@ -69,4 +70,8 @@ input{
 } 
 .decimal{
     font-weight: bold;
+}
+.add:hover,.mul:hover,.sub:hover,.buttons-1 button:hover,button:hover{
+    background-color: lightgoldenrodyellow;
+    cursor: pointer;
 }
